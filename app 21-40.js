@@ -1651,4 +1651,55 @@ alert("Date 100 years back: " + pastDate);
 // Net Amount Payable (within Due Date) = Number of units * Charges per unit
 // & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge
 
+// a. Customer Name
+var customerName = "Fayyan Hussain";
+// b. Current Month
+var month = "April";
+// c. Number of units
+var units = 235;
+// d. Charges per unit
+var chargesPerUnit = 55;
+// e. Net Amount Payable (within Due Date)
+var netAmount = units * chargesPerUnit;
+// f. Late Payment Surcharge
+var lateSurcharge = 1750;
+// g. Gross Amount Payable (after Due Date)
+var grossAmount = netAmount + lateSurcharge;
+// Display in browser
+document.write("<h2>K-Electric Bill</h2>");
+document.write("Customer Name: " + customerName + "<br>");
+document.write("Month: " + month + "<br>");
+document.write("Number of Units: " + units + "<br>");
+document.write("Charges per Unit: " + chargesPerUnit.toFixed(2) + "<br><br>");
+
+document.write("Net Amount Payable (within Due Date): " + netAmount.toFixed(2) + "<br>");
+document.write("Late Payment Surcharge: " + lateSurcharge.toFixed(2) + "<br>");
+document.write("Gross Amount Payable (after Due Date): " + grossAmount.toFixed(2));
+
+/////////////////////////////////////////////////////////////////////////////
+
+Concept samajh lo:
+📌 Formula:
+Net Amount = units * chargesPerUnit
+Gross Amount = netAmount + lateSurcharge
+📌 toFixed(2)
+
+👉 decimal ko 2 digits tak round karta hai
+Example:
+
+55 → 55.00
+12925 → 12925.00
+📌 Output Example:
+K-Electric Bill
+
+Customer Name: Fayyan Hussain
+Month: April
+Number of Units: 235
+Charges per Unit: 55.00
+
+Net Amount Payable: 6560.00
+Late Payment Surcharge: 350.00
+Gross Amount Payable: 6910.00
+
+
 // // ////////// ________________________________________________________________________ //////////
